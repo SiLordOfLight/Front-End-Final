@@ -7,12 +7,21 @@
     <script src="jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="COPstyle.css">
   </head>
   <body>
     <div id="pageContent">
       <form name="pageContent">
-        <input type="text" name="Page Title" id="pageTitle"></input>
-        <input type="text" name="Page Body" id="pageBody"></input>
+        <div class="form-group">
+          <label for="title">Page title:</label>
+          <input type="text" class="form-control" id="pageTitle">
+        </div>
+
+        <div class="form-group">
+          <label for="body">Page body:</label>
+          <textarea name="pageBody" class="form-control" id="pageBody"></textarea>
+        </div>
       </form>
     </div>
   </body>
