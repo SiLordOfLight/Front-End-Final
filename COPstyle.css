@@ -1,13 +1,25 @@
 #pageContent {
   margin: 10px;
+  height: 100vh;
 }
 
-#pageContent input {
-  /* margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px; */
+#contentForm {
+  height: 100%;
 }
 
-/* html, body {
-    background-color: rgb(56, 113, 65);
-} */
+.full_form {
+  height: calc(100% - 20px);
+  margin-bottom: 20px;
+}
+
+#postButton {
+  margin: auto;
+  display: block;
+}
+
+.form-control#pageBody {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+
+}
