@@ -8,7 +8,7 @@ let navHeader = `
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-		<>
+		<p id="logo">DSW</p>
 	</div>
 	<div id="indexNavbar" class="collapse navbar-collapse">
 		<ul class="nav navbar-nav">
