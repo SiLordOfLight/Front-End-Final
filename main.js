@@ -1,4 +1,6 @@
-let navHeader = `<nav class="navbar navbar-inverse">
+let navHeader = `
+<link rel="stylesheet" href="css/navbarStyle.css">
+<nav class="navbar navbar-inverse">
 <div class="container-fluid">
 	<div class="navbar-header">
 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#indexNavbar">
