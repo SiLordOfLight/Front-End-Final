@@ -1,0 +1,25 @@
+#pageContent {
+  margin: 10px;
+  height: 100vh;
+}
+
+#contentForm {
+  height: 100%;
+}
+
+.full_form {
+  height: calc(100% - 20px);
+  margin-bottom: 20px;
+}
+
+#postButton {
+  margin: auto;
+  display: block;
+}
+
+.form-control#pageBody {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+
+}
