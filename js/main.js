@@ -1,4 +1,6 @@
-let navHeader = `<nav class="navbar navbar-inverse">
+let navHeader = `
+<link rel="stylesheet" href="css/navbarStyle.css">
+<nav class="navbar navbar-inverse">
 <div class="container-fluid">
 	<div class="navbar-header">
 		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#indexNavbar">
@@ -6,7 +8,7 @@ let navHeader = `<nav class="navbar navbar-inverse">
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-		<>
+		<p id="logo">DSW</p>
 	</div>
 	<div id="indexNavbar" class="collapse navbar-collapse">
 		<ul class="nav navbar-nav">
