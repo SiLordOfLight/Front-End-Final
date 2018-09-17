@@ -19,16 +19,12 @@ let navHeader = `<nav class="navbar navbar-inverse">
 </nav>
 `
 
-var obj = JSON.parse('[ "John", "30", "New York", "Ben"]')
+
 
 $(document).ready(function() {
 	$("body").prepend(navHeader);
 	//$("#"+currentPage()).hide()
 	$("#"+currentPage()).addClass("active");
-	for(i = 0; i < obj.length; i++){
-		document.getElementById("PageSummary").innerHTML = document.getElementById("PageSummary").innerHTML + "<li>" + obj[i] + "</li>";
-	}
-	
 })
 
 function currentPage() {
@@ -47,8 +43,3 @@ function p(x) {
 	
 }) */
 
-function randomButton(){
-	    
-		var output = obj[Math.floor(Math.random()*obj.length)];
-		document.getElementById("demo").innerHTML = output;
-}
