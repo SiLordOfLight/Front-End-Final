@@ -24,6 +24,11 @@ let navHeader = `
 $(document).ready(function() {
 	$("body").prepend(navHeader);
 	//$("#"+currentPage()).hide()
+	
+	var navHeight = $(".navbar").height()+'px';
+	p(navHeight);
+	$("#logo").height(navHeight);
+	
 	$("#"+currentPage()).addClass("active");
 })
 
@@ -36,3 +41,4 @@ function currentPage() {
 function p(x) {
 	console.log(x);
 }
+
