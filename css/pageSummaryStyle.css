@@ -1,0 +1,23 @@
+ul {
+  list-style: none;
+}
+
+#PageSummary li {
+	width: 0px;
+	color: gray;
+	border-bottom: solid;
+}
+
+#PageSummary li:nth-child(even) {
+	background-color: gray;
+}
+
+#PageSummary li:nth-child(odd) {
+	background-color: gray;
+}
+
+
+#PageSummary li:hover {
+	cursor: pointer;
+	color: blue;
+}
