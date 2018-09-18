@@ -4,7 +4,7 @@ $("document").ready(function(){
   });
 
   if(JSON.parse(localStorage.getItem("pages")) == null) {
-    localStorage.setItem("pages", "[\"buff\"]");
+    localStorage.setItem("pages", "[]");
   }
 });
 
