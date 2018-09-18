@@ -21,7 +21,7 @@ let navHeader = `
 </nav>
 `
 
-$(document).ready(function() {
+$("document").ready(function() {
 	$("body").prepend(navHeader);
 	//$("#"+currentPage()).hide()
 	$("#"+currentPage()).addClass("active");
