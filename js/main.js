@@ -21,6 +21,7 @@ let navHeader = `
 </nav>
 `
 
+
 $(document).ready(function() {
 	$("body").prepend(navHeader);
 	//$("#"+currentPage()).hide()
@@ -28,7 +29,6 @@ $(document).ready(function() {
 	var navHeight = $(".navbar").height()+'px';
 	p(navHeight);
 	$("#logo").height(navHeight);
-	
 	$("#"+currentPage()).addClass("active");
 })
 
@@ -41,4 +41,3 @@ function currentPage() {
 function p(x) {
 	console.log(x);
 }
-
