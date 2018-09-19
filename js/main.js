@@ -26,9 +26,10 @@ $(document).ready(function() {
 	$("body").prepend(navHeader);
 	//$("#"+currentPage()).hide()
 	
-	var navHeight = $(".navbar").height()+'px';
-	p(navHeight);
-	$("#logo").height(navHeight);
+	var navLeftMargin = $(".navbar").css("margin-left");
+	p(navLeftMargin);
+	//$("#logo").css();
+	
 	$("#"+currentPage()).addClass("active");
 })
 
