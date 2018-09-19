@@ -7,6 +7,10 @@ $("document").ready(function(){
     handleBold();
   });
 
+  $("#italicButton").click(function() {
+    handleItalic();
+  });
+
   if(JSON.parse(localStorage.getItem("pages")) == null) {
     localStorage.setItem("pages", "[]");
   }
@@ -14,7 +18,7 @@ $("document").ready(function(){
 
 function postPage() {
   let pageTitle = $("#pageTitle").val();
-  let pageBody = $("#pageBody").val();
+  let pageBody = $("#pageBody").text();
 
   var keyname = pageTitle;
 
@@ -32,12 +36,31 @@ function postPage() {
 
 function handleBold() {
   if ($("#boldButton").hasClass("btn-light")) {
-    console.log("Is Light");
     $("#boldButton").removeClass("btn-light");
     $("#boldButton").addClass("btn-dark");
+
+    let newPB = $("#pageBody").text() + "<b>";
+    console.log(newPB);
+    document.getElementById("pageBody").innerHTML = newPB;
   } else if ($("#boldButton").hasClass("btn-dark")) {
     $("#boldButton").removeClass("btn-dark");
     $("#boldButton").addClass("btn-light");
-  }
 
+    let newPB = $("#pageBody").html() + "</b>";
+    $("#pageBody").html(newPB);
+  }
+}
+
+function handleItalic() {
+  if ($("#italicButton").hasClass("btn-light")) {
+    $("#italicButton").removeClass("btn-light");
+    $("#italicButton").addClass("btn-dark");
+
+    $("#pageBody").append("<i>");
+  } else if ($("#italicButton").hasClass("btn-dark")) {
+    $("#italicButton").removeClass("btn-dark");
+    $("#italicButton").addClass("btn-light");
+
+    $("#pageBody").append("</i>");
+  }
 }
