@@ -8,7 +8,6 @@ $(document).ready(function() {
 		var thisKey = event.target.innerHTML;
 		sessionStorage.setItem("pageNow", thisKey);
 		document.location.href = "blankPage.html";
-	})
-	
-})
+	});
 
+})

@@ -12,6 +12,6 @@ function loadPageContent() {
 
   $("title").text(pageTitle);
 
-  $("#pt").html(pageTitle);
-  $("#pb").html(pageBody);
+  document.getElementById("pt").innerHTML = pageTitle;
+  document.getElementById("pb").innerHTML = pageBody;
 }

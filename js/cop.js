@@ -3,16 +3,20 @@ $("document").ready(function(){
     postPage();
   });
 
+  $("#boldButton").click(function() {
+    handleBold();
+  });
+
   if(JSON.parse(localStorage.getItem("pages")) == null) {
     localStorage.setItem("pages", "[]");
   }
 });
 
 function postPage() {
-  var pageTitle = $("#pageTitle").val();
-  var pageBody = $("#pageBody").val();
+  let pageTitle = $("#pageTitle").val();
+  let pageBody = $("#pageBody").val();
 
-  let keyname = pageTitle.replace(" ", "");
+  var keyname = pageTitle;
 
   let obj = {"title":pageTitle, "body":pageBody};
   localStorage.setItem(keyname, JSON.stringify(obj));
@@ -24,4 +28,16 @@ function postPage() {
   sessionStorage.setItem("pageNow", keyname);
 
   document.location.href = "blankPage.html";
+}
+
+function handleBold() {
+  if ($("#boldButton").hasClass("btn-light")) {
+    console.log("Is Light");
+    $("#boldButton").removeClass("btn-light");
+    $("#boldButton").addClass("btn-dark");
+  } else if ($("#boldButton").hasClass("btn-dark")) {
+    $("#boldButton").removeClass("btn-dark");
+    $("#boldButton").addClass("btn-light");
+  }
+
 }
