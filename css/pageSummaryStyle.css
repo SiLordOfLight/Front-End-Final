@@ -1,23 +1,18 @@
-ul {
+#PageSummary ul {
+  width: auto;
   list-style: none;
 }
 
-#PageSummary li {
-	width: 0px;
-	color: gray;
-	border-bottom: solid;
+#PageSummary span {
+	color: #1a0dab;
 }
 
-#PageSummary li:nth-child(even) {
-	background-color: gray;
-}
-
-#PageSummary li:nth-child(odd) {
-	background-color: gray;
-}
-
-
-#PageSummary li:hover {
+#PageSummary span:hover {
+	color: #609;
 	cursor: pointer;
-	color: blue;
+	color: ;
+}
+
+#PageSummary span:nth-child(even) {
+	background-color: Gainsboro
 }
