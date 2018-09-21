@@ -37,3 +37,11 @@
   display: flex;
   flex-direction: column;
 }
+
+#pageBody div {
+  display: inline-block;
+}
+
+#pageBody div.control_enter {
+  display: block;
+}
