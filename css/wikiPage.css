@@ -1,8 +1,17 @@
 #pt{
   margin: 10px;
-
+  text-align:center;
+  width: 100%;
 }
 
 #pb{
   margin: 10px;
+  margin-top: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.btn {
+	margin-left: 20px;
+	display: inline-block;
 }
