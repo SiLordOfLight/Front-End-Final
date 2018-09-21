@@ -1,22 +1,22 @@
 let navHeader = `
 <link rel="stylesheet" href="css/navbarStyle.css">
-<nav class="navbar navbar-inverse">
-<div class="container-fluid">
-	<div class="navbar-header">
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#indexNavbar">
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-		</button>
-		<p id="logo">DSW</p>
-	</div>
-	<div id="indexNavbar" class="collapse navbar-collapse">
-		<ul class="nav navbar-nav">
-		  <li id="index"><a href="index.html">Home</a></li>
-		  <li id="createAPage"><a href="createAPage.html">Create a page</a></li>
-		  <li id="pageSummary"><a href="pageSummary.html">Summary of pages</a></li>
-		</ul>
-	</div>
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <!-- Brand -->
+  <p class="navbar-brand" id="logo">DSW</p>
+
+  <!-- Toggler/collapsible Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+			<li class="nav-item" id="index"><a class="nav-link" href="index.html">Home</a></li>
+			<li class="nav-item" id="createAPage"><a class="nav-link" href="createAPage.html">Create a page</a></li>
+			<li class="nav-item" id="pageSummary"><a class="nav-link" href="pageSummary.html">Summary of pages</a></li>
+    </ul>
   </div>
 </nav>
 `
