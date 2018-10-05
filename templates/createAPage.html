@@ -1,0 +1,59 @@
+{%extends "layout.html"%}
+
+{%set activePage="createAPage"%}
+
+{%block title%}Create a Wiki Page{%endblock%}
+
+{%block styles%}
+	<link rel="stylesheet" href="css/COPstyle.css">
+{%endblock%}
+
+{%block scripts%}
+	<script src="js/cop.js"></script>
+{%endblock%}
+
+{%block content%}
+  <div id="pageContent">
+    <form name="pageContent" id="contentForm">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="form-group">
+            <label for="title">Page title:</label>
+            <input type="text" class="form-control" id="pageTitle">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <button type="button" class="btn btn-success" id="postButton">Post</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-2">
+          <button type="button" class="btn btn-light" id="boldButton"><b>B</b></button>
+        </div>
+
+        <div class="col-lg-2">
+          <button type="button" class="btn btn-light" id="italicButton"><i>I</i></button>
+        </div>
+
+        <div class="col-lg-4">
+
+        </div>
+
+        <div class="col-lg-4">
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="form-group full_form">
+            <label for="body">Page body:</label>
+            <!-- <textarea name="pageBody" class="form-control" id="pageBody"></textarea> -->
+            <p id="pageBody" contenteditable="true"></p>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+{%endblock%}

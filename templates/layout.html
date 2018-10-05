@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{%block title%}{%endblock%}</title>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/navbarStyle.css">
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+    {%block styles%}{%endblock%}
+    {%block scripts%}{%endblock%}
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <!-- Brand -->
+      <p class="navbar-brand" id="logo">DSW</p>
+
+      <!-- Toggler/collapsible Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+    			<li class="nav-item" id="index" {%if activePage == "home"%}class="active"{%endif%} ><a class="nav-link" href="index.html">Home</a></li>
+    			<li class="nav-item" id="createAPage" {%if activePage == "createAPage"%}class="active"{%endif%} ><a class="nav-link" href="createAPage.html">Create a page</a></li>
+    			<li class="nav-item" id="pageSummary" {%if activePage == "pageSummary"%}class="active"{%endif%} ><a class="nav-link" href="pageSummary.html">Summary of pages</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    {%block content%}{%endblock%}
+  </body>
+</html>
