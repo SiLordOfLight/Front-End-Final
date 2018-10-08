@@ -1,11 +1,11 @@
 {%extends "layout.html"%}
 
 {%block styles%}
-	<link rel="stylesheet" href="{{url_for('static/css', filename='wikiPage.css')}}">
+	<link rel="stylesheet" href="{{url_for('static', filename='wikiPage.css')}}">
 {%endblock%}
 
 {%block scripts%}
-	<script src="{{url_for('static/js', filename='pageLoad.js')}}"></script>
+	<script src="{{url_for('static', filename='pageLoad.js')}}"></script>
 {%endblock%}
 
 {%block content%}
