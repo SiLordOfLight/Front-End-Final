@@ -7,7 +7,7 @@ $(document).ready(function() {
 	$("#PageSummary span").click(function(event){
 		var thisKey = event.target.innerHTML;
 		sessionStorage.setItem("pageNow", thisKey);
-		document.location.href = "blankPage.html";
+		document.location.href = "wikiPage";
 	});
 
 })

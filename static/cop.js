@@ -57,7 +57,7 @@ function postPage() {
 
   sessionStorage.setItem("pageNow", keyname);
 
-  document.location.href = "blankPage.html";
+  document.location.href = "wikiPage";
 }
 
 function handleBold() {
