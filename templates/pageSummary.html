@@ -5,11 +5,11 @@
 {%block title%}DSW Wiki - Page Summary{%endblock%}
 
 {%block styles%}
-	<link rel="stylesheet" href="css/pageSummaryStyle.css">
+	<link rel="stylesheet" href="{{url_for('static/css', filename='pageSummaryStyle.css')}}">
 {%endblock%}
 
 {%block scripts%}
-	<script src="js/pageSummary.js"></script>
+	<script src="{{url_for('static/js', filename='pageSummary.js')}}"></script>
 {%endblock%}
 
 {%block content%}

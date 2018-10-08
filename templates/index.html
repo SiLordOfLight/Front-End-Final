@@ -5,11 +5,11 @@
 {%block title%}DSW Wiki - Home{%endblock%}
 
 {%block styles%}
-	<link rel="stylesheet" href="css/indexStyle.css">
+	<link rel="stylesheet" href="{{url_for('static/css', filename='indexStyle.css')}}">
 {%endblock%}
 
 {%block scripts%}
-	<script src="js/home.js"></script>
+	<script src="{{url_for('static/js', filename='home.js')}}"></script>
 {%endblock%}
 
 {%block content%}
