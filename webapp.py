@@ -13,15 +13,15 @@ def render_main():
     # 4: Final rendered HTML send to client
 
 @app.route("/createAPage")
-def render_page1():
+def render_cop():
     return render_template('createAPage.html')
 
 @app.route("/pageSummary")
-def render_page2():
+def render_psum():
     return render_template('pageSummary.html')
 
 @app.route("/wikiPage")
-def render_page2():
+def render_wikiPage():
     return render_template('blankPage.html')
 
 if __name__=="__main__":
